@@ -1,0 +1,13 @@
+{
+  "description": "ILIAS base nginx docker image (Experimental Beta Version)",
+  "keywords": [
+    "alpine",
+    "base",
+    "beta",
+    "docker",
+    "experimental",
+    "ilias",
+    "nginx"
+  ],
+  "homepage": "https://github.com/fluxapps/FluxIliasNginxBase"
+}
