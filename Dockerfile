@@ -1,13 +1,13 @@
 FROM nginx:mainline-alpine
 
-LABEL org.opencontainers.image.source="https://github.com/fluxapps/FluxIliasNginxBase"
+LABEL org.opencontainers.image.source="https://github.com/fluxapps/flux-ilias-nginx-base"
 LABEL maintainer="fluxlabs <support@fluxlabs.ch> (https://fluxlabs.ch)"
 
 RUN unlink /etc/nginx/conf.d/default.conf
 
-COPY . /FluxIliasNginx
+COPY . /flux-ilias-nginx-base
 
-ENTRYPOINT ["/FluxIliasNginx/bin/entrypoint.sh"]
+ENTRYPOINT ["/flux-ilias-nginx-base/bin/entrypoint.sh"]
 
 ENV ILIAS_WEB_DIR /var/www/html
 

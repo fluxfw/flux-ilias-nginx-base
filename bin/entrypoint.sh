@@ -51,7 +51,7 @@ server {
 		fastcgi_param SERVER_NAME \$host;
 	}
 
-	include /FluxIliasNginx/src/rewrites.conf;
+	include /flux-ilias-nginx-base/src/rewrites.conf;
 }" > /etc/nginx/conf.d/ilias.conf
 
 echo "Unset ILIAS env variables (For not show in PHP variables or log files)"
