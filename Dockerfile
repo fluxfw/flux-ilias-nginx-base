@@ -1,4 +1,6 @@
-FROM nginx:mainline-alpine
+ARG NGINX_IMAGE=nginx:mainline-alpine
+
+FROM $NGINX_IMAGE
 
 LABEL org.opencontainers.image.source="https://github.com/fluxapps/flux-ilias-nginx-base"
 LABEL maintainer="fluxlabs <support@fluxlabs.ch> (https://fluxlabs.ch)"
