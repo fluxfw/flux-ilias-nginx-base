@@ -22,7 +22,7 @@ if [ -n "$ILIAS_NGINX_HTTPS_CERT" ]; then
     ssl_dhparam=
   fi
   listen="listen $ILIAS_NGINX_LISTEN:$ILIAS_NGINX_HTTP_PORT;
-  return 301 https://\$host$https_redirect_port\$request_uri;
+  return 302 https://\$host$https_redirect_port\$request_uri;
 }
 server {
   listen $ILIAS_NGINX_LISTEN:$ILIAS_NGINX_HTTPS_PORT ssl;
