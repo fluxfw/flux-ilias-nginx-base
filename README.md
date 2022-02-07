@@ -8,7 +8,9 @@ The follow environment variables are available
 
 | Variable | Description | Default value |
 | -------- | ----------- | ------------- |
+| ILIAS_FILESYSTEM_DATA_DIR | Path to data directory | /var/iliasdata |
 | ILIAS_WEB_DIR | Path to ILIAS source code | /var/www/html |
+| ILIAS_FILESYSTEM_WEB_DATA_DIR | Path to web data directory<br>This is a volume | *%ILIAS_FILESYSTEM_DATA_DIR%*/web |
 | ILIAS_NGINX_HTTPS_CERT | Path to HTTPS certificate file<br>Set this will enable listen on HTTPS and redirect HTTP to HTTPS<br>Should be on a volume | *-* |
 | ILIAS_NGINX_HTTPS_KEY | Path to HTTPS key file<br>Should be on a volume | *-* |
 | ILIAS_NGINX_HTTPS_DHPARAM | Path to HTTPS pem file<br>Should be on a volume | *-* |
