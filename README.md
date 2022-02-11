@@ -4,7 +4,7 @@ Experimental Beta Version
 
 First look at [flux-ilias](https://github.com/fluxapps/flux-ilias)
 
-The follow environment variables are available
+## Environment variables
 
 | Variable | Description | Default value |
 | -------- | ----------- | ------------- |
@@ -24,3 +24,7 @@ The follow environment variables are available
 | ILIAS_NGINX_PHP_READ_TIMEOUT | Maximal execution time | 900 |
 
 Minimal variables required to set are **bold**
+
+## Custom config
+
+You can put custom conf files in /flux-ilias-nginx-base/src/custom in your Dockerfile which will be loaded too
