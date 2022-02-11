@@ -30,4 +30,6 @@ EXPOSE $ILIAS_NGINX_HTTPS_PORT
 
 ENTRYPOINT ["/flux-ilias-nginx-base/bin/entrypoint.sh"]
 
+RUN mkdir -p /flux-ilias-nginx-base/src/custom
+
 COPY . /flux-ilias-nginx-base
