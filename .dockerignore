@@ -1,4 +1,3 @@
 *
-!bin
-!bin/**
+!bin/docker-entrypoint.sh
 !src/rewrites.conf
