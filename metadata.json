@@ -1,13 +1,11 @@
 {
-  "description": "ILIAS base nginx docker image (Experimental Beta Version)",
-  "topics": [
-    "alpine",
-    "base",
-    "beta",
-    "docker",
-    "experimental",
-    "ilias",
-    "nginx"
-  ],
-  "homepage": "https://github.com/fluxapps/flux-ilias-nginx-base"
+    "description": "ILIAS base nginx docker image",
+    "topics": [
+        "alpine",
+        "base",
+        "docker",
+        "ilias",
+        "nginx"
+    ],
+    "homepage": "https://github.com/fluxapps/flux-ilias-nginx-base"
 }

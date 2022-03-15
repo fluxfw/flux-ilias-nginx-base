@@ -1,6 +1,6 @@
 # flux-ilias-nginx-base
 
-Experimental Beta Version
+ILIAS base nginx docker image
 
 First look at [flux-ilias](https://github.com/fluxapps/flux-ilias)
 
