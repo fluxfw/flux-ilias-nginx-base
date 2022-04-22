@@ -1,6 +1,4 @@
-ARG NGINX_IMAGE=nginx:mainline-alpine
-
-FROM $NGINX_IMAGE
+FROM nginx:mainline-alpine
 
 LABEL org.opencontainers.image.source="https://github.com/flux-caps/flux-ilias-nginx-base"
 LABEL maintainer="fluxlabs <support@fluxlabs.ch> (https://fluxlabs.ch)"
@@ -33,3 +31,6 @@ ENTRYPOINT ["/flux-ilias-nginx-base/bin/docker-entrypoint.sh"]
 RUN mkdir -p /flux-ilias-nginx-base/src/custom
 
 COPY . /flux-ilias-nginx-base
+
+ARG COMMIT_SHA
+LABEL org.opencontainers.image.revision="$COMMIT_SHA"
