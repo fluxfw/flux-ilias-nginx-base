@@ -53,6 +53,8 @@ server {
 
 	client_max_body_size $ILIAS_NGINX_CLIENT_MAX_BODY_SIZE;
 
+	include /flux-ilias-nginx-base/src/rewrites.conf;
+
 	location ~ \.php$ {
 		try_files \$uri =404;
 		include fastcgi_params;
@@ -61,8 +63,6 @@ server {
 		fastcgi_param SCRIPT_FILENAME \$document_root\$fastcgi_script_name;
 		fastcgi_param SERVER_NAME \$host;
 	}
-
-	include /flux-ilias-nginx-base/src/rewrites.conf;
 }" > /etc/nginx/conf.d/ilias.conf
 
 echo "Start nginx"
