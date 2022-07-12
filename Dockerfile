@@ -1,9 +1,3 @@
-FROM alpine:latest AS build
-
-COPY . /build/flux-ilias-nginx-base
-
-RUN (cd /build && tar -czf flux-ilias-nginx-base.tar.gz flux-ilias-nginx-base)
-
 FROM nginx:mainline-alpine
 
 LABEL org.opencontainers.image.source="https://github.com/flux-caps/flux-ilias-nginx-base"
@@ -38,7 +32,7 @@ ENTRYPOINT ["/flux-ilias-nginx-base/bin/docker-entrypoint.sh"]
 
 RUN mkdir -p /flux-ilias-nginx-base/src/custom
 
-COPY --from=build /build /
+COPY . /flux-ilias-nginx-base
 
 ARG COMMIT_SHA
 LABEL org.opencontainers.image.revision="$COMMIT_SHA"
