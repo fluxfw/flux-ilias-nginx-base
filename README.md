@@ -2,7 +2,7 @@
 
 ILIAS base nginx docker image
 
-First look at [flux-ilias](https://github.com/flux-caps/flux-ilias)
+First look at [flux-ilias](https://github.com/fluxfw/flux-ilias)
 
 ## Environment variables
 
