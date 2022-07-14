@@ -1,7 +1,6 @@
 FROM nginx:mainline-alpine
 
-LABEL org.opencontainers.image.source="https://github.com/flux-caps/flux-ilias-nginx-base"
-LABEL maintainer="fluxlabs <support@fluxlabs.ch> (https://fluxlabs.ch)"
+LABEL org.opencontainers.image.source="https://github.com/fluxfw/flux-ilias-nginx-base"
 
 RUN unlink /etc/nginx/conf.d/default.conf
 
