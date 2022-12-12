@@ -1,7 +1,5 @@
 FROM nginx:mainline-alpine
 
-LABEL org.opencontainers.image.source="https://github.com/fluxfw/flux-ilias-nginx-base"
-
 RUN unlink /etc/nginx/conf.d/default.conf
 
 RUN adduser -u 82 -D -S -G www-data www-data
