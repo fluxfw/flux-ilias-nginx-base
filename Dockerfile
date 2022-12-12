@@ -4,7 +4,7 @@ RUN unlink /etc/nginx/conf.d/default.conf
 
 RUN adduser -u 82 -D -S -G www-data www-data
 
-RUN sed -i "s/}/\n    application\/javascript mjs;\n}/" /etc/nginx/mime.types
+RUN sed -i "s/}/\n    application\/javascript mjs;\n    application\/manifest+json webmanifest;\n}/" /etc/nginx/mime.types
 
 ENV ILIAS_WEB_DIR /var/www/html
 RUN mkdir -p "$ILIAS_WEB_DIR" && chown www-data:www-data -R "$ILIAS_WEB_DIR"
