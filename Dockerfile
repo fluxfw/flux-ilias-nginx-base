@@ -25,7 +25,7 @@ EXPOSE $ILIAS_NGINX_HTTP_PORT
 ENV ILIAS_NGINX_HTTPS_PORT 443
 EXPOSE $ILIAS_NGINX_HTTPS_PORT
 
-ENTRYPOINT ["/flux-ilias-nginx-base/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["/flux-ilias-nginx-base/bin/server.sh"]
 
 RUN mkdir -p /flux-ilias-nginx-base/src/custom
 
