@@ -1,4 +1,4 @@
 *
-!bin/docker-entrypoint.sh
 !bin/install-flux-ilias-rest-api.sh
+!bin/server.sh
 !src/rewrites.conf
