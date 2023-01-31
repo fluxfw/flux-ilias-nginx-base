@@ -30,6 +30,3 @@ ENTRYPOINT ["/flux-ilias-nginx-base/bin/server.sh"]
 RUN mkdir -p /flux-ilias-nginx-base/src/custom
 
 COPY . /flux-ilias-nginx-base
-
-ARG COMMIT_SHA
-LABEL org.opencontainers.image.revision="$COMMIT_SHA"
